@@ -1,4 +1,4 @@
-package com.coffeepoweredcrew.singleton;
+package com.java.tga.creational.singleton;
 
 /**
  * (Ref. Google I/O 2k8 Joshua Bloch)
