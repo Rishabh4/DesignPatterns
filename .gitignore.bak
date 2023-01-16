@@ -1,0 +1,11 @@
+*/target/
+/service_logs/
+.classpath
+.project
+.settings/
+/bin/
+.idea/
+.DS_Store
+*.iml
+/target/
+.factorypath
