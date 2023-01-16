@@ -1,4 +1,5 @@
 */target/
+*out/
 /service_logs/
 .classpath
 .project

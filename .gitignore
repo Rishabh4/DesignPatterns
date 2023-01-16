@@ -1,5 +1,5 @@
 */target/
-*/out/
+*out/
 /service_logs/
 .classpath
 .project
@@ -10,3 +10,4 @@
 *.iml
 /target/
 .factorypath
+.class
