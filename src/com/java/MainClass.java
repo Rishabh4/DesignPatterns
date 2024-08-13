@@ -1,9 +1,10 @@
-package com.test;
+package com.java;
 
-import com.test.tga.creational.builder.Address;
-import com.test.tga.creational.builder.User;
-import com.test.tga.creational.builder.UserDTO;
+import com.java.java8.creational.builder.Address;
+import com.java.java8.creational.builder.User;
+import com.java.java8.creational.builder.UserDTO;
 
+import java.time.Instant;
 import java.time.LocalDate;
 
 public class MainClass {
@@ -11,9 +12,10 @@ public class MainClass {
     public static void main(String[] args) {
         UserDTO userDTO = directBuild(UserDTO.builder(), createUser());
         System.out.println(userDTO);
+        Instant.now();
     }
 
-    private static UserDTO directBuild(UserDTO.UserDTOBuilder builder, User user){
+    private static UserDTO directBuild(UserDTO.UserDTOBuilder builder, User user) {
         return UserDTO.builder()
                 .withFirstName(user.getFirstName())
                 .withLastName(user.getLastName())
@@ -31,7 +33,7 @@ public class MainClass {
         return user;
     }
 
-    private static Address getAddress(){
+    private static Address getAddress() {
         Address address = new Address();
         address.setHouseNumber("7/1112");
         address.setStreet("Bartala Yadgar");

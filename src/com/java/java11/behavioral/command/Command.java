@@ -1,0 +1,8 @@
+package com.java.java11.behavioral.command;
+
+//Interface implemented by all concrete
+//command classes
+public interface Command {
+
+    void execute();
+}

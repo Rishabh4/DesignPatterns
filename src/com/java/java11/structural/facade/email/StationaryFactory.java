@@ -1,0 +1,8 @@
+package com.java.java11.structural.facade.email;
+
+public class StationaryFactory {
+
+    public static Stationary createStationary() {
+        return new HalloweenStationary();
+    }
+}
