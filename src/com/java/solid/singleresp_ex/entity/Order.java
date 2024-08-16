@@ -11,7 +11,7 @@ public class Order {
     private Long createdOn;
 
     private Long deliveredOn;
-    
+
     private Long canceledOn;
 
     private Long lastUpdatedOn;
@@ -23,7 +23,7 @@ public class Order {
     public Order() {
 
     }
-    
+
     public Order(Long orderId, double value) {
         this.orderId = orderId;
         this.value = value;
@@ -141,5 +141,5 @@ public class Order {
         this.status = status;
     }
 
-    
+
 }

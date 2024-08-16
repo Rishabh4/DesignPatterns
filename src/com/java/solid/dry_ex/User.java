@@ -59,5 +59,5 @@ public class User {
     public void setTagline(String tagline) {
         this.tagline = tagline;
     }
-    
+
 }

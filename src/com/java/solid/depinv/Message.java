@@ -5,20 +5,20 @@ import java.time.ZoneId;
 
 public class Message {
 
-	private String msg;
-	
-	private LocalDateTime timestamp;
-	
-	public Message(String msg) {
-		this.msg = msg;
-		this.timestamp = LocalDateTime.now(ZoneId.of("UTC"));
-	}
+    private final String msg;
 
-	public String getMsg() {
-		return msg;
-	}
+    private final LocalDateTime timestamp;
 
-	public LocalDateTime getTimestamp() {
-		return timestamp;
-	}
+    public Message(String msg) {
+        this.msg = msg;
+        this.timestamp = LocalDateTime.now(ZoneId.of("UTC"));
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public LocalDateTime getTimestamp() {
+        return timestamp;
+    }
 }

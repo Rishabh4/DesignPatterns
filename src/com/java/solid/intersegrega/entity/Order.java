@@ -4,24 +4,24 @@ import java.time.LocalDateTime;
 
 public class Order extends Entity {
 
-	private LocalDateTime orderPlacedOn;
-	
-	private double totalValue;
+    private LocalDateTime orderPlacedOn;
 
-	public LocalDateTime getOrderPlacedOn() {
-		return orderPlacedOn;
-	}
+    private double totalValue;
 
-	public void setOrderPlacedOn(LocalDateTime orderPlacedOn) {
-		this.orderPlacedOn = orderPlacedOn;
-	}
+    public LocalDateTime getOrderPlacedOn() {
+        return orderPlacedOn;
+    }
 
-	public double getTotalValue() {
-		return totalValue;
-	}
+    public void setOrderPlacedOn(LocalDateTime orderPlacedOn) {
+        this.orderPlacedOn = orderPlacedOn;
+    }
 
-	public void setTotalValue(double totalValue) {
-		this.totalValue = totalValue;
-	}
-	
+    public double getTotalValue() {
+        return totalValue;
+    }
+
+    public void setTotalValue(double totalValue) {
+        this.totalValue = totalValue;
+    }
+
 }

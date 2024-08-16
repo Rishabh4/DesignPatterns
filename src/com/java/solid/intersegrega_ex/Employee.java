@@ -4,17 +4,17 @@ import java.util.List;
 
 public interface Employee {
 
-	public Long getEmployeeId();
-	
-	public String getDesignation();
-	
-	public boolean isProjectOwner(Long projectId);
-	
-	public List<Employee> getReportees();
-	
-	public void addReportee(Employee employee);
-	
-	public void setProjectOwner(Long projectId);
-	
-	public void removeProjectOwner(Long projectId);
+    Long getEmployeeId();
+
+    String getDesignation();
+
+    boolean isProjectOwner(Long projectId);
+
+    List<Employee> getReportees();
+
+    void addReportee(Employee employee);
+
+    void setProjectOwner(Long projectId);
+
+    void removeProjectOwner(Long projectId);
 }

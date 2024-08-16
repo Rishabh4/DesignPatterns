@@ -14,7 +14,7 @@ public class UserValidator {
     }
 
     private boolean isValidFirstName(String firstName) {
-        if(firstName == null || firstName.trim().length() == 0) {
+        if (firstName == null || firstName.trim().length() == 0) {
             return false;
         }
         Pattern pattern = Pattern.compile("[^A-Za-z0-9]"); //negative 
@@ -23,10 +23,10 @@ public class UserValidator {
     }
 
     private boolean isValidLastName(String lastName) {
-        if(lastName == null) {
+        if (lastName == null) {
             return false;
         }
-        if(lastName.trim().length() == 0) {
+        if (lastName.trim().length() == 0) {
             return false;
         }
 
@@ -36,7 +36,7 @@ public class UserValidator {
     }
 
     private boolean isValidTagline(String tagline) {
-        if(tagline == null || tagline.trim().length() == 0)
+        if (tagline == null || tagline.trim().length() == 0)
             return true;
         return !Pattern.compile("[^A-Za-z0-9]").matcher(tagline).find();
     }

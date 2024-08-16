@@ -3,7 +3,7 @@ package com.java.patterns.creational.simplefactory;
 public class Client {
 
     public static void main(String[] args) {
-        Post post = PostFactory.createPost("news");
+        com.java.patterns.creational.simplefactory.Post post = com.java.patterns.creational.simplefactory.PostFactory.createPost("news");
         System.out.println(post);
 
     }

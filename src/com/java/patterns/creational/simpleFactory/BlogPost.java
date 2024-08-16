@@ -3,7 +3,7 @@ package com.java.patterns.creational.simplefactory;
 /**
  * Represents a blog post.
  */
-public class BlogPost extends Post {
+public class BlogPost extends com.java.patterns.creational.simplefactory.Post {
 
     private String author;
 

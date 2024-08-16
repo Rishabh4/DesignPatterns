@@ -1,6 +1,7 @@
 package com.java.solid.encapsulation.service;
 
 import com.java.solid.encapsulation.entity.User;
+
 //Permission management
 public class UserPermissionService {
 

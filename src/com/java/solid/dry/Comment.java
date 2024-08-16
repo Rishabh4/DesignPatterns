@@ -39,5 +39,5 @@ public class Comment {
         this.userId = userId;
     }
 
-    
+
 }

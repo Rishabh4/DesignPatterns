@@ -2,47 +2,47 @@ package com.java.solid.openclose;
 
 //base class - closed for modification
 public abstract class Subscriber {
-	
-	protected Long subscriberId;
 
-	protected String address;
+    protected Long subscriberId;
 
-	protected Long phoneNumber;
-	
-	protected int baseRate;
+    protected String address;
 
-	public Long getSubscriberId() {
-		return subscriberId;
-	}
+    protected Long phoneNumber;
 
-	public void setSubscriberId(Long subscriberId) {
-		this.subscriberId = subscriberId;
-	}
+    protected int baseRate;
 
-	public String getAddress() {
-		return address;
-	}
+    public Long getSubscriberId() {
+        return subscriberId;
+    }
 
-	public void setAddress(String address) {
-		this.address = address;
-	}
+    public void setSubscriberId(Long subscriberId) {
+        this.subscriberId = subscriberId;
+    }
 
-	public Long getPhoneNumber() {
-		return phoneNumber;
-	}
+    public String getAddress() {
+        return address;
+    }
 
-	public void setPhoneNumber(Long phoneNumber) {
-		this.phoneNumber = phoneNumber;
-	}
-    
-	public int getBaseRate() {
-		return baseRate;
-	}
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
-	public void setBaseRate(int baseRate) {
-		this.baseRate = baseRate;
-	}
+    public Long getPhoneNumber() {
+        return phoneNumber;
+    }
 
-	public abstract double calculateBill(); //extension
-    
+    public void setPhoneNumber(Long phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public int getBaseRate() {
+        return baseRate;
+    }
+
+    public void setBaseRate(int baseRate) {
+        this.baseRate = baseRate;
+    }
+
+    public abstract double calculateBill(); //extension
+
 }

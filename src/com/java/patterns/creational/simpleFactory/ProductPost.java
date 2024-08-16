@@ -3,7 +3,7 @@ package com.java.patterns.creational.simplefactory;
 /**
  * Represents a product information post.
  */
-public class ProductPost extends Post {
+public class ProductPost extends com.java.patterns.creational.simplefactory.Post {
 
     private String imageUrl;
 

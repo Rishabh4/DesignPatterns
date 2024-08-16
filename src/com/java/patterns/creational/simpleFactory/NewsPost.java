@@ -5,7 +5,7 @@ import java.time.LocalDate;
 /**
  * Represents a news post.
  */
-public class NewsPost extends Post {
+public class NewsPost extends com.java.patterns.creational.simplefactory.Post {
 
     private String headline;
 

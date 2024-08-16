@@ -2,25 +2,25 @@ package com.java.solid.codetointerface_ex.entity;
 
 public class Product extends Entity {
 
-	private String displayName;
-	
-	private double basePrice;
+    private String displayName;
 
-	public String getDisplayName() {
-		return displayName;
-	}
+    private double basePrice;
 
-	public void setDisplayName(String displayName) {
-		this.displayName = displayName;
-	}
+    public String getDisplayName() {
+        return displayName;
+    }
 
-	public double getBasePrice() {
-		return basePrice;
-	}
+    public void setDisplayName(String displayName) {
+        this.displayName = displayName;
+    }
 
-	public void setBasePrice(double basePrice) {
-		this.basePrice = basePrice;
-	}
-	
-	
+    public double getBasePrice() {
+        return basePrice;
+    }
+
+    public void setBasePrice(double basePrice) {
+        this.basePrice = basePrice;
+    }
+
+
 }

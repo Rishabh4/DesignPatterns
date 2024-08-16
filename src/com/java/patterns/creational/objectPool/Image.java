@@ -1,7 +1,7 @@
 package com.java.patterns.creational.objectpool;
 
 //Represents our abstract reusable
-public interface Image extends Poolable {
+public interface Image extends com.java.patterns.creational.objectpool.Poolable {
 
     void draw();
 

@@ -2,25 +2,25 @@ package com.java.solid.codetointerface_ex.entity;
 
 public class User extends Entity {
 
-	private String username;
-	
-	private String address;
+    private String username;
 
-	public String getUsername() {
-		return username;
-	}
+    private String address;
 
-	public void setUsername(String username) {
-		this.username = username;
-	}
+    public String getUsername() {
+        return username;
+    }
 
-	public String getAddress() {
-		return address;
-	}
+    public void setUsername(String username) {
+        this.username = username;
+    }
 
-	public void setAddress(String address) {
-		this.address = address;
-	}
-	
-	
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+
 }

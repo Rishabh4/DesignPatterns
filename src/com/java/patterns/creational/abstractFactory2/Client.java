@@ -26,9 +26,9 @@ public class Client {
 
     }
 
-    public Instance createServer(Instance.Capacity cap, int storageMib) {
+    public Instance createServer(com.java.patterns.creational.abstractfactory2.Instance.Capacity cap, int storageMib) {
         Instance instance = factory.createInstance(cap);
-        Storage storage = factory.createStorage(storageMib);
+        com.java.patterns.creational.abstractfactory2.Storage storage = factory.createStorage(storageMib);
         instance.attachStorage(storage);
         return instance;
     }

@@ -1,24 +1,24 @@
 package com.java.solid.singleresp_ex;
 
-import java.time.Instant;
-
 import com.java.solid.singleresp_ex.controller.OrderController;
 import com.java.solid.singleresp_ex.entity.Order;
+
+import java.time.Instant;
 
 public class Main {
 
     private static final String TEST_JSON = "{\"orderId\": \"1\", \"value\": \"200.00\"}";
-    
+
     public static void main(String[] args) {
         OrderController controller = new OrderController();
         controller.createOrder(TEST_JSON);
-        
+
         Order order = controller.getOrder(1l);
-        if(order.getLastUpdatedOn() != null && order.getLastUpdatedOn() > Instant.now().minusSeconds(10).getEpochSecond()) {
-        	System.out.println("Test passed");
+        if (order.getLastUpdatedOn() != null && order.getLastUpdatedOn() > Instant.now().minusSeconds(10).getEpochSecond()) {
+            System.out.println("Test passed");
         } else {
-        	System.err.println("Test Failed.");
+            System.err.println("Test Failed.");
         }
-        
+
     }
 }

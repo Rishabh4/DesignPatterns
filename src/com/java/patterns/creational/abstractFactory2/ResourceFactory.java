@@ -3,7 +3,7 @@ package com.java.patterns.creational.abstractfactory2;
 //Abstract factory with methods defined for each object type.
 public interface ResourceFactory {
 
-    Instance createInstance(Instance.Capacity capacity);
+    Instance createInstance(com.java.patterns.creational.abstractfactory2.Instance.Capacity capacity);
 
-    Storage createStorage(int capMib);
+    com.java.patterns.creational.abstractfactory2.Storage createStorage(int capMib);
 }

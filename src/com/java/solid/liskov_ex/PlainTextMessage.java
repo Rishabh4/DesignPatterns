@@ -2,18 +2,18 @@ package com.java.solid.liskov_ex;
 
 public class PlainTextMessage extends Message {
 
-	public PlainTextMessage(String content) {
-		super(content);
-	}
-	
-	public String getEncodedMessage() {
-		return content;
-	}
+    public PlainTextMessage(String content) {
+        super(content);
+    }
 
-	@Override
-	public String toString() {
-		return "PlainTextMessage [content=" + content + "]";
-	}
-	
-	
+    public String getEncodedMessage() {
+        return content;
+    }
+
+    @Override
+    public String toString() {
+        return "PlainTextMessage [content=" + content + "]";
+    }
+
+
 }

@@ -15,7 +15,7 @@ public class AwsResourceFactory implements ResourceFactory {
 
     @Override
     public Storage createStorage(int capMib) {
-        return new S3Storage(capMib);
+        return new com.java.patterns.creational.abstractfactory2.aws.S3Storage(capMib);
     }
 
 

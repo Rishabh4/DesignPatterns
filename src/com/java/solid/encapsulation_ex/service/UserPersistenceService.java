@@ -1,10 +1,10 @@
 package com.java.solid.encapsulation_ex.service;
 
+import com.java.solid.encapsulation_ex.entity.User;
+
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-
-import com.java.solid.encapsulation_ex.entity.User;
 
 public class UserPersistenceService {
 
@@ -17,19 +17,19 @@ public class UserPersistenceService {
     }
 
     public void saveUser(User user) {
-       synchronized(storage) {
-           storage.put(user.getName(), user);
-       }     
+        synchronized (storage) {
+            storage.put(user.getName(), user);
+        }
     }
 
     public User getUser(String name) {
-        synchronized(storage) {
+        synchronized (storage) {
             return storage.get(name);
-        }    
+        }
     }
 
     public Collection<User> getAll() {
-        synchronized(storage) {
+        synchronized (storage) {
             return storage.values();
         }
     }

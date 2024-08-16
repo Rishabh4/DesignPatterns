@@ -12,11 +12,11 @@ public class ISPSubscriber extends Subscriber {
         List<InternetSessionHistory.InternetSession> sessions = InternetSessionHistory.getCurrentSessions(subscriberId);
         long totalData = sessions.stream().mapToLong(InternetSessionHistory.InternetSession::getDataUsed).sum();
         long chargeableData = totalData - freeUsage;
-        
-        if(chargeableData <= 0) {
-        	return 0;
+
+        if (chargeableData <= 0) {
+            return 0;
         }
-        return chargeableData*baseRate/100;
+        return chargeableData * baseRate / 100;
     }
 
     /**
@@ -33,5 +33,5 @@ public class ISPSubscriber extends Subscriber {
         this.freeUsage = freeUsage;
     }
 
-    
+
 }

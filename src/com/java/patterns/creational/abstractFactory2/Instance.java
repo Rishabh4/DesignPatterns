@@ -4,7 +4,7 @@ package com.java.patterns.creational.abstractfactory2;
 public interface Instance {
     void start();
 
-    void attachStorage(Storage storage);
+    void attachStorage(com.java.patterns.creational.abstractfactory2.Storage storage);
 
     void stop();
 

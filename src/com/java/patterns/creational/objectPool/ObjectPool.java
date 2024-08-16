@@ -4,7 +4,7 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.function.Supplier;
 
-public class ObjectPool<T extends Poolable> {
+public class ObjectPool<T extends com.java.patterns.creational.objectpool.Poolable> {
 
     private final BlockingQueue<T> availablePool;
 

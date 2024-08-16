@@ -1,41 +1,41 @@
 package com.java.solid.intersegrega.service;
 
+import com.java.solid.intersegrega.entity.User;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import com.java.solid.intersegrega.entity.User;
+public class UserPersistenceService implements PersistenceService<User> {
 
-public class UserPersistenceService implements PersistenceService<User>{
-	
-	private static final Map<Long, User> USERS = new HashMap<>();
-	
-	@Override
-	public void save(User entity) {
-		synchronized (USERS) {
-			USERS.put(entity.getId(), entity);
-		}
-	}
+    private static final Map<Long, User> USERS = new HashMap<>();
 
-	@Override
-	public void delete(User entity) {
-		synchronized (USERS) {
-			USERS.remove(entity.getId());
-		}
-	}
+    @Override
+    public void save(User entity) {
+        synchronized (USERS) {
+            USERS.put(entity.getId(), entity);
+        }
+    }
 
-	@Override
-	public User findById(Long id) {
-		synchronized (USERS) {
-			return USERS.get(id);
-		}
-	}
+    @Override
+    public void delete(User entity) {
+        synchronized (USERS) {
+            USERS.remove(entity.getId());
+        }
+    }
 
-	public List<User> findByName(String name) {
-		synchronized (USERS) {
-			return USERS.values().stream().filter(u->u.getName().equalsIgnoreCase(name)).collect(Collectors.toList());
-		}
-	}
+    @Override
+    public User findById(Long id) {
+        synchronized (USERS) {
+            return USERS.get(id);
+        }
+    }
+
+    public List<User> findByName(String name) {
+        synchronized (USERS) {
+            return USERS.values().stream().filter(u -> u.getName().equalsIgnoreCase(name)).collect(Collectors.toList());
+        }
+    }
 
 }

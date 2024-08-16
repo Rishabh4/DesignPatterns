@@ -15,7 +15,7 @@ public class GoogleResourceFactory implements ResourceFactory {
 
     @Override
     public Storage createStorage(int capMib) {
-        return new GoogleCloudStorage(capMib);
+        return new com.java.patterns.creational.abstractfactory2.gcp.GoogleCloudStorage(capMib);
     }
 
 

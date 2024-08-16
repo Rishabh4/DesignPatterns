@@ -6,14 +6,14 @@ package com.java.patterns.creational.simplefactory;
  */
 public class PostFactory {
 
-    public static Post createPost(String type) {
+    public static com.java.patterns.creational.simplefactory.Post createPost(String type) {
         switch (type) {
             case "blog":
-                return new BlogPost();
+                return new com.java.patterns.creational.simplefactory.BlogPost();
             case "news":
-                return new NewsPost();
+                return new com.java.patterns.creational.simplefactory.NewsPost();
             case "product":
-                return new ProductPost();
+                return new com.java.patterns.creational.simplefactory.ProductPost();
             default:
                 throw new IllegalArgumentException("Post type is unown");
         }

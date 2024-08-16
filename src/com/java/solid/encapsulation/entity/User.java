@@ -1,4 +1,5 @@
 package com.java.solid.encapsulation.entity;
+
 //User entity
 public class User {
 
