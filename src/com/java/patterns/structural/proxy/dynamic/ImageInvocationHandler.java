@@ -34,11 +34,11 @@ public class ImageInvocationHandler implements InvocationHandler {
         this.filename = filename;
     }
 
-    //This method is called for eery method invocation on the proxy
+    //This method is called for every method invocation on the proxy
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         //You can implement proxy logic here
-        System.out.println("Invoking methood: " + method.getName());
+        System.out.println("Invoking method: " + method.getName());
         if (method.equals(setLocationMethod)) {
             return handleSetLocation(args);
         } else if (method.equals(getLocationMethod)) {

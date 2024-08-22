@@ -11,6 +11,9 @@ public class Client {
         Command c2 = new AddMemberCommand("b@b", "spam", service);
         MailTasksRunner.getInstance().addCommand(c2);
 
+        Command c3 = new RemoveMemberCommand("b@b", "spam", service);
+        MailTasksRunner.getInstance().addCommand(c3);
+
         Thread.sleep(3000);
         MailTasksRunner.getInstance().shutdown();
     }

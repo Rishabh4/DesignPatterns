@@ -3,7 +3,7 @@ package com.java.patterns.behavioral.interpreter;
 public class Client {
 
     public static void main(String[] args) {
-        Report report1 = new Report("Cashflow repot", "FINANCE_ADMIN OR ADMIN");
+        Report report1 = new Report("Cash flow report", "FINANCE_ADMIN OR ADMIN");
         ExpressionBuilder builder = new ExpressionBuilder();
 
         PermissionExpression exp = builder.build(report1);
@@ -11,7 +11,7 @@ public class Client {
 
         User user1 = new User("Dave", "USER");
 
-        System.out.println("USer access report:" + exp.interpret(user1));
+        System.out.println("User access report:" + exp.interpret(user1));
     }
 
 }

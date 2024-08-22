@@ -8,7 +8,7 @@ public class Client {
 
     public static void main(String[] args) {
         LeaveApplication application = LeaveApplication.getBuilder().withType(Type.Sick)
-                .from(LocalDate.now()).to(LocalDate.of(2018, 2, 28))
+                .from(LocalDate.now()).to(LocalDate.now().plusDays(4))
                 .build();
         System.out.println(application);
         System.out.println("**************************************************");

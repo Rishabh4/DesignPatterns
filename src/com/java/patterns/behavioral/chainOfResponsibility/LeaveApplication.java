@@ -55,7 +55,7 @@ public class LeaveApplication {
     }
 
     public void reject(String approverName) {
-        this.status = Status.Rejecetd;
+        this.status = Status.Rejected;
         this.processedBy = approverName;
     }
 
@@ -67,7 +67,7 @@ public class LeaveApplication {
 
     public enum Type {Sick, PTO, LOP}
 
-    public enum Status {Pending, Approved, Rejecetd}
+    public enum Status {Pending, Approved, Rejected}
 
     public static class Builder {
         private Type type;
